@@ -1,0 +1,20 @@
+Memory map:
+$0000 - $03FF Internal RAM (1K bytes) 
+$1000 - $105F Internal peripherals mapped
+$1800 - $1FFF External peripherals IO
+$2000 - $7FFF External user RAM
+$8000 - $FFFF External EPROM 
+
+Okay, 16 address bits a15 - a0
+0000 0000 0000 0000
+
+Here is the High Level Address Decoder logic on the highest 2 bits of the address
+
+Address bits | 
+     15 | 14 | 13 | 12 | 11 | 10 |  9 |  8 |  7 | Area Accessed
+--------+----+----+----+----+----+----+----+----+------------------
+      0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 | Internal RAM
+      0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 | External Perfireals
+      0 |  X |  X |  1 |  1 |  1 |  X |  X |  X | External RAM
+      1 |  X |  X |  X |  X |  X |  X |  X |  X | EPROM
+
