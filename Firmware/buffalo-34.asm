@@ -5071,4 +5071,3 @@ VCOP     FDB    JCOP
 VCLM     FDB    JCLM
 VRST     FDB    BUFFALO
          END
-
