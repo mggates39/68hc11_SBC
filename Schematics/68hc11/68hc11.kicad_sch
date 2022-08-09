@@ -2665,7 +2665,6 @@
     )
   )
 
-
   (junction (at 139.7 218.44) (diameter 0) (color 0 0 0 0)
     (uuid 015db19b-cc39-49c9-9bf8-0fd98e5a2323)
   )
@@ -6908,7 +6907,7 @@
     (property "Reference" "C15" (id 0) (at 125.73 189.8649 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "19 uF" (id 1) (at 125.73 192.4049 0)
+    (property "Value" "10 uF" (id 1) (at 125.73 192.4049 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (id 2) (at 121.92 191.77 0)
@@ -6963,7 +6962,7 @@
     (property "Reference" "RN1" (id 0) (at 71.12 19.3039 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7 kO" (id 1) (at 71.12 21.8439 0)
+    (property "Value" "4.7 k" (id 1) (at 71.12 21.8439 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_THT:R_Array_SIP8" (id 2) (at 73.025 20.32 90)
@@ -8199,7 +8198,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d271d8e0-6f73-4dff-889e-b4e6826a44bf)
     (property "Reference" "R2" (id 0) (at 123.19 127 90))
-    (property "Value" "10 MO" (id 1) (at 123.19 129.54 90))
+    (property "Value" "10M" (id 1) (at 123.19 129.54 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (id 2) (at 122.936 134.366 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -8775,7 +8774,7 @@
       (reference "C14") (unit 1) (value "10 uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
     )
     (path "/058e48dd-abfb-4356-a3ec-3f1c1d300d65"
-      (reference "C15") (unit 1) (value "19 uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
+      (reference "C15") (unit 1) (value "10 uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
     )
     (path "/d5278e62-1e47-4c52-b959-29dd41e34108"
       (reference "C16") (unit 1) (value "10 uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
@@ -8808,10 +8807,10 @@
       (reference "R1") (unit 1) (value "330") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
     )
     (path "/d271d8e0-6f73-4dff-889e-b4e6826a44bf"
-      (reference "R2") (unit 1) (value "10 MO") (footprint "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal")
+      (reference "R2") (unit 1) (value "10M") (footprint "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal")
     )
     (path "/0ecf9e04-6c55-4a4d-b4e8-8b3c906e6141"
-      (reference "RN1") (unit 1) (value "4.7 kO") (footprint "Resistor_THT:R_Array_SIP8")
+      (reference "RN1") (unit 1) (value "4.7 k") (footprint "Resistor_THT:R_Array_SIP8")
     )
     (path "/a8990ba7-c40c-4a12-abcb-6187090269d2"
       (reference "SW1") (unit 1) (value "Reset") (footprint "Button_Switch_THT:SW_PUSH_6mm")
