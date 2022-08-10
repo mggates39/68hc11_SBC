@@ -3,11 +3,11 @@
 
 | Start | End | Description |
 | ----------- | ----------- | ----------- |
-| $0000 | $03FF | Internal RAM (1K bytes)  |
+| $0000 | $01FF | Internal RAM (256K bytes)  |
 | $1000 | $105F | Internal peripherals mapped |
 | $1800 | $1FFF | External peripherals I|
 | $2000 | $7FFF | External user RAM |
-| $8000 |  $FFFF | External EPROM |
+| $8000 | $FFFF | External EPROM |
 
 The proocessor has 16 address bits a15 - a0
 

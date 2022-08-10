@@ -1,5 +1,5 @@
 Memory map:
-$0000 - $03FF Internal RAM (1K bytes) 
+$0000 - $01FF Internal RAM (256 bytes) 
 $1000 - $105F Internal peripherals mapped
 $1800 - $1FFF External peripherals IO
 $2000 - $7FFF External user RAM
@@ -8,13 +8,19 @@ $8000 - $FFFF External EPROM
 Okay, 16 address bits a15 - a0
 0000 0000 0000 0000
 
-Here is the High Level Address Decoder logic on the highest 2 bits of the address
+RAM_SEL = (/A15)*E                                                    ; $0000 - $7FFF
+EXTRA_SEL = ( A15*/A14*/A13)*E*RW                                     ; $8000 - $9FFF
+PIA1_SEL = ( A15*/A14* A13*/A12*/A11*/A10)                            ; $A000 - $A3FF
+PIA2_SEL = ( A15*/A14* A13*/A12*/A11* A10)                            ; $A400 - $A7FF
+RDIO_SEL = ( A15*/A14* A13*/A12* A11*/A10 + IO_EN)*(E* RW + RW_EN)    ; $A800 - $ABFF
+WRIO_SEL = ( A15*/A14* A13*/A12* A11* A10 + IO_EN)*(E*/RW + RW_EN)    ; $AC00 - $AFFF
+SPARE_SEL = ( A15* A14*/A13)*E*RW                                     ; $C000 - $DFFF
+BOOT_SEL = ( A15* A14* A13)*E*RW                                      ; $E000 - $FFFF
 
-Address bits | 
-     15 | 14 | 13 | 12 | 11 | 10 |  9 |  8 |  7 | Area Accessed
---------+----+----+----+----+----+----+----+----+------------------
-      0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 | Internal RAM
-      0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 | External Perfireals
-      0 |  X |  X |  1 |  1 |  1 |  X |  X |  X | External RAM
-      1 |  X |  X |  X |  X |  X |  X |  X |  X | EPROM
+
+
+
+
+
+
 
