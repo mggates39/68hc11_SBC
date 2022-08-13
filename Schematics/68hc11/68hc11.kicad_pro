@@ -49,10 +49,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "clearance|22860000|102025000|79460dfd-4c50-4cf2-8e2a-3accae0f4432|1ed7db8f-5a62-46b7-bdf3-e929647b6876",
-        "clearance|22860000|103100000|1ed7db8f-5a62-46b7-bdf3-e929647b6876|7e7ecff7-82e5-4ebe-811c-9fe149fc9185"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -369,7 +366,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "68hc11.dsn",
       "step": "",
       "vrml": ""
     },

@@ -1,0 +1,90 @@
+
+(rules PCB 68hc11
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 8)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd-smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    GND "unconnected-(RN1-Pad2)" "unconnected-(RN1-Pad3)" /T2OUT /AD0 /AD1 /AD2 /AD3
+    /AD4 /AD5 /AD6 /AD7 /XTAL /VS+ VCC /C1+
+    "/C1-" /C2+ "/C2-" /PA7 /PA6 /PA5 /PA4 /PA3
+    /PA2 /PA1 /PA0 /A15 /A14 /A13 /A12 /A11
+    /A10 /A9 /A8 /PE0 /PE4 /PE1 /PE5 /PE2
+    /PE6 /PE3 /PE7 /VRL /MODB /D0 /D1 /D2
+    /D3 /D4 /D5 /D6 /D7 /A0 /A1 /A2
+    /A3 /A4 /A5 /A6 /A7 "unconnected-(U6-Pad26)" "/VS-" "Net-(D1-Pad2)"
+    "unconnected-(J2-Pad7)" /*XIRQ /*IRQ /MODA /VRH /CTS /TxD /MIS
+    /MOS /SCK /SS /PPA0 /PPA2 /PPA3 /PPA4 /PPA5
+    /PPA6 /PPA7 /PPB0 /PPB1 /PPB2 /PPB3 /PPB4 /PPB5
+    /PPB6 /PPB7 /CB1 /CB2 "unconnected-(U2-Pad37)" "unconnected-(U2-Pad38)" /CA2 /CA1
+    "unconnected-(U7-Pad26)" "unconnected-(U8-Pad27)" "unconnected-(U9-Pad12)" "unconnected-(U9-Pad13)" "unconnected-(U9-Pad14)" /RxD /EXTAL /E
+    /R2IN /R{slash}*W /*RESET /*PIA1 /*BOOT /*SPARE /*RAM "unconnected-(J2-Pad9)"
+    "unconnected-(J3-Pad2)" "unconnected-(J3-Pad10)" /PPA1 "unconnected-(J4-Pad10)" /AS
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
