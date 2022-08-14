@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 8)
+    (start_pass_no 9)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,7 +29,6 @@
     (width 250.0)
     (clear 200.0)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd-smd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -67,7 +66,10 @@
     /PPB6 /PPB7 /CB1 /CB2 "unconnected-(U2-Pad37)" "unconnected-(U2-Pad38)" /CA2 /CA1
     "unconnected-(U7-Pad26)" "unconnected-(U8-Pad27)" "unconnected-(U9-Pad12)" "unconnected-(U9-Pad13)" "unconnected-(U9-Pad14)" /RxD /EXTAL /E
     /R2IN /R{slash}*W /*RESET /*PIA1 /*BOOT /*SPARE /*RAM "unconnected-(J2-Pad9)"
-    "unconnected-(J3-Pad2)" "unconnected-(J3-Pad10)" /PPA1 "unconnected-(J4-Pad10)" /AS
+    "unconnected-(J3-Pad2)" "unconnected-(J3-Pad10)" /PPA1 "unconnected-(J4-Pad10)" /AS "Net-(U13-Pad2)" "Net-(U13-Pad5)" "Net-(U11-Pad4)"
+    "Net-(U13-Pad10)" "Net-(U12-Pad5)" "Net-(U12-Pad4)" "Net-(U12-Pad2)" "Net-(U12-Pad1)" "unconnected-(U11-Pad7)" "unconnected-(U11-Pad9)" "unconnected-(U11-Pad10)"
+    "unconnected-(U11-Pad11)" "Net-(U11-Pad12)" "Net-(U11-Pad13)" /*PIA2 "Net-(U13-Pad1)" /*EXTRA /*RDIO /*WRIO
+    "unconnected-(C10-Pad2)" "unconnected-(C17-Pad2)" "unconnected-(C18-Pad2)" "unconnected-(C19-Pad2)" "unconnected-(C20-Pad2)" "unconnected-(C21-Pad2)" "unconnected-(U8-Pad20)"
     (clearance_class default)
     (via_rule default)
     (rule
