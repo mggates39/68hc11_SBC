@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 9)
+    (start_pass_no 11)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -69,7 +69,8 @@
     "unconnected-(J3-Pad2)" "unconnected-(J3-Pad10)" /PPA1 "unconnected-(J4-Pad10)" /AS "Net-(U13-Pad2)" "Net-(U13-Pad5)" "Net-(U11-Pad4)"
     "Net-(U13-Pad10)" "Net-(U12-Pad5)" "Net-(U12-Pad4)" "Net-(U12-Pad2)" "Net-(U12-Pad1)" "unconnected-(U11-Pad7)" "unconnected-(U11-Pad9)" "unconnected-(U11-Pad10)"
     "unconnected-(U11-Pad11)" "Net-(U11-Pad12)" "Net-(U11-Pad13)" /*PIA2 "Net-(U13-Pad1)" /*EXTRA /*RDIO /*WRIO
-    "unconnected-(C10-Pad2)" "unconnected-(C17-Pad2)" "unconnected-(C18-Pad2)" "unconnected-(C19-Pad2)" "unconnected-(C20-Pad2)" "unconnected-(C21-Pad2)" "unconnected-(U8-Pad20)"
+    "unconnected-(C10-Pad2)" "unconnected-(C17-Pad2)" "unconnected-(C18-Pad2)" "unconnected-(C19-Pad2)" "unconnected-(C20-Pad2)" "unconnected-(C21-Pad2)" "unconnected-(U8-Pad20)" "unconnected-(J1-Pad3)"
+    "unconnected-(J1-Pad4)" "unconnected-(J1-Pad2)"
     (clearance_class default)
     (via_rule default)
     (rule
