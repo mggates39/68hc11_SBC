@@ -14,22 +14,10 @@
         (index 0)
       )
     )
-    (layer In1.Cu
-      (type signal)
-      (property
-        (index 1)
-      )
-    )
-    (layer In2.Cu
-      (type signal)
-      (property
-        (index 2)
-      )
-    )
     (layer B.Cu
       (type signal)
       (property
-        (index 3)
+        (index 1)
       )
     )
     (boundary
@@ -40,11 +28,7 @@
             256500 -37500  256500 -152000))
     (plane GND (polygon B.Cu 0  256540 -152400  35965.4 -152556  35560 -38100  256540 -38100
             256540 -152400))
-    (keepout "" (polygon B.Cu 0  249750 -89500  248000 -89500  248000 -88250  249750 -88250
-            249750 -89500))
-    (keepout "" (polygon B.Cu 0  247950 -91500  249450 -91500  249350 -93000  247900 -93000
-            247850 -91500  247850 -91450  247950 -91500))
-    (via "Via[0-3]_800:400_um")
+    (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -1055,11 +1039,11 @@
       (pin Round[A]Pad_1600_um 2 2500 0)
     )
     (image "Package_DIP:DIP-40_W15.24mm::1"
-      (outline (path signal 120  1160 1330  1160 -49590))
+      (outline (path signal 120  6620 1330  1160 1330))
       (outline (path signal 120  14080 -49590  14080 1330))
       (outline (path signal 120  1160 -49590  14080 -49590))
       (outline (path signal 120  14080 1330  8620 1330))
-      (outline (path signal 120  6620 1330  1160 1330))
+      (outline (path signal 120  1160 1330  1160 -49590))
       (outline (path signal 0  8662.43 1372.43  8680 1330  8661.95 1135.23  8608.42 947.084
             8521.23 771.982  8403.35 615.883  8258.79 484.102  8092.48 381.127
             7910.08 310.465  7717.8 274.522  7522.2 274.522  7329.92 310.465
@@ -1682,14 +1666,13 @@
       (pin Round[A]Pad_1600_um 2 2000 0)
     )
     (image Capacitor_THT:CP_Radial_D5.0mm_P2.00mm::4
-      (outline (path signal 120  2961 -1040  2961 -1699))
-      (outline (path signal 120  1160 2576  1160 1040))
       (outline (path signal 120  1320 2561  1320 1040))
       (outline (path signal 120  2441 -1040  2441 -2149))
       (outline (path signal 120  3201 1383  3201 -1383))
       (outline (path signal 120  1721 2480  1721 1040))
       (outline (path signal 120  3041 1605  3041 -1605))
       (outline (path signal 120  1040 2580  1040 1040))
+      (outline (path signal 120  2641 -1040  2641 -2004))
       (outline (path signal 120  2921 -1040  2921 -1743))
       (outline (path signal 120  1640 2501  1640 1040))
       (outline (path signal 120  2601 2035  2601 1040))
@@ -1701,8 +1684,8 @@
       (outline (path signal 120  2521 2095  2521 1040))
       (outline (path signal 120  2481 -1040  2481 -2122))
       (outline (path signal 120  3241 1319  3241 -1319))
+      (outline (path signal 120  2961 -1040  2961 -1699))
       (outline (path signal 120  1480 -1040  1480 -2536))
-      (outline (path signal 120  2641 -1040  2641 -2004))
       (outline (path signal 120  1640 -1040  1640 -2501))
       (outline (path signal 120  2801 1864  2801 1040))
       (outline (path signal 120  2361 -1040  2361 -2200))
@@ -1751,6 +1734,7 @@
       (outline (path signal 120  2881 1785  2881 1040))
       (outline (path signal 120  2241 2268  2241 1040))
       (outline (path signal 120  2001 2382  2001 1040))
+      (outline (path signal 120  1160 2576  1160 1040))
       (outline (path signal 120  2561 -1040  2561 -2065))
       (outline (path signal 120  1560 -1040  1560 -2520))
       (outline (path signal 120  2801 -1040  2801 -1864))
@@ -2808,85 +2792,61 @@
     )
     (padstack Round[A]Pad_1300_um
       (shape (circle F.Cu 1300))
-      (shape (circle In1.Cu 1300))
-      (shape (circle In2.Cu 1300))
       (shape (circle B.Cu 1300))
       (attach off)
     )
     (padstack Round[A]Pad_1400_um
       (shape (circle F.Cu 1400))
-      (shape (circle In1.Cu 1400))
-      (shape (circle In2.Cu 1400))
       (shape (circle B.Cu 1400))
       (attach off)
     )
     (padstack Round[A]Pad_1422.4_um
       (shape (circle F.Cu 1422.4))
-      (shape (circle In1.Cu 1422.4))
-      (shape (circle In2.Cu 1422.4))
       (shape (circle B.Cu 1422.4))
       (attach off)
     )
     (padstack Round[A]Pad_1500_um
       (shape (circle F.Cu 1500))
-      (shape (circle In1.Cu 1500))
-      (shape (circle In2.Cu 1500))
       (shape (circle B.Cu 1500))
       (attach off)
     )
     (padstack Round[A]Pad_1600_um
       (shape (circle F.Cu 1600))
-      (shape (circle In1.Cu 1600))
-      (shape (circle In2.Cu 1600))
       (shape (circle B.Cu 1600))
       (attach off)
     )
     (padstack Round[A]Pad_1800_um
       (shape (circle F.Cu 1800))
-      (shape (circle In1.Cu 1800))
-      (shape (circle In2.Cu 1800))
       (shape (circle B.Cu 1800))
       (attach off)
     )
     (padstack Round[A]Pad_2000_um
       (shape (circle F.Cu 2000))
-      (shape (circle In1.Cu 2000))
-      (shape (circle In2.Cu 2000))
       (shape (circle B.Cu 2000))
       (attach off)
     )
     (padstack Round[A]Pad_4000_um
       (shape (circle F.Cu 4000))
-      (shape (circle In1.Cu 4000))
-      (shape (circle In2.Cu 4000))
       (shape (circle B.Cu 4000))
       (attach off)
     )
     (padstack Oval[A]Pad_1400x1400_um
       (shape (path F.Cu 1400  0 0  0 0))
-      (shape (path In1.Cu 1400  0 0  0 0))
-      (shape (path In2.Cu 1400  0 0  0 0))
       (shape (path B.Cu 1400  0 0  0 0))
       (attach off)
     )
     (padstack Oval[A]Pad_1600x1600_um
       (shape (path F.Cu 1600  0 0  0 0))
-      (shape (path In1.Cu 1600  0 0  0 0))
-      (shape (path In2.Cu 1600  0 0  0 0))
       (shape (path B.Cu 1600  0 0  0 0))
       (attach off)
     )
     (padstack Oval[A]Pad_1700x1700_um
       (shape (path F.Cu 1700  0 0  0 0))
-      (shape (path In1.Cu 1700  0 0  0 0))
-      (shape (path In2.Cu 1700  0 0  0 0))
       (shape (path B.Cu 1700  0 0  0 0))
       (attach off)
     )
     (padstack Oval[A]Pad_900x1600_um
       (shape (path F.Cu 900  0 -350  0 350))
-      (shape (path In1.Cu 900  0 -350  0 350))
-      (shape (path In2.Cu 900  0 -350  0 350))
       (shape (path B.Cu 900  0 -350  0 350))
       (attach off)
     )
@@ -2896,15 +2856,11 @@
     )
     (padstack Rect[A]Pad_1300x1300_um
       (shape (rect F.Cu -650 -650 650 650))
-      (shape (rect In1.Cu -650 -650 650 650))
-      (shape (rect In2.Cu -650 -650 650 650))
       (shape (rect B.Cu -650 -650 650 650))
       (attach off)
     )
     (padstack Rect[A]Pad_1422.4x1422.4_um
       (shape (rect F.Cu -711.2 -711.2 711.2 711.2))
-      (shape (rect In1.Cu -711.2 -711.2 711.2 711.2))
-      (shape (rect In2.Cu -711.2 -711.2 711.2 711.2))
       (shape (rect B.Cu -711.2 -711.2 711.2 711.2))
       (attach off)
     )
@@ -2914,22 +2870,16 @@
     )
     (padstack Rect[A]Pad_1600x1600_um
       (shape (rect F.Cu -800 -800 800 800))
-      (shape (rect In1.Cu -800 -800 800 800))
-      (shape (rect In2.Cu -800 -800 800 800))
       (shape (rect B.Cu -800 -800 800 800))
       (attach off)
     )
     (padstack Rect[A]Pad_1700x1700_um
       (shape (rect F.Cu -850 -850 850 850))
-      (shape (rect In1.Cu -850 -850 850 850))
-      (shape (rect In2.Cu -850 -850 850 850))
       (shape (rect B.Cu -850 -850 850 850))
       (attach off)
     )
     (padstack Rect[A]Pad_1800x1800_um
       (shape (rect F.Cu -900 -900 900 900))
-      (shape (rect In1.Cu -900 -900 900 900))
-      (shape (rect In2.Cu -900 -900 900 900))
       (shape (rect B.Cu -900 -900 900 900))
       (attach off)
     )
@@ -2937,10 +2887,8 @@
       (shape (rect F.Cu -950 -950 950 950))
       (attach off)
     )
-    (padstack "Via[0-3]_800:400_um"
+    (padstack "Via[0-1]_800:400_um"
       (shape (circle F.Cu 800))
-      (shape (circle In1.Cu 800))
-      (shape (circle In2.Cu 800))
       (shape (circle B.Cu 800))
       (attach off)
     )
@@ -2948,10 +2896,10 @@
   (network
     (net GND
       (pins SW1-2 SW1-2@1 U16-14 U16-20 U17-1 U6-14 U6-20 C7-2 C20-2 C2-2 U4-10 J1-5
-        U14-7 C4-2 C12-2 C18-2 U2-1 C16-1 U12-7 C5-2 C10-2 U7-14 U7-20 U15-7 C6-2
-        C1-2 C21-2 C19-2 U9-11 U9-15 C22-2 D1-1 U5-4 U5-5 U5-8 J4-10 U13-7 U10-3 C9-2
-        C11-2 U3-1 U3-10 C23-2 U8-14 U8-22 C3-2 JP4-1 U1-1 C17-2 U11-8 C8-2 J2-0 J2-0@1
-        J2-5 J11-20)
+        J1-SH J1-SH@1 J1-SH@2 J1-SH@3 J1-SH@4 J1-SH@5 U14-7 C4-2 C12-2 C18-2 U2-1
+        C16-1 U12-7 C5-2 C10-2 U7-14 U7-20 U15-7 C6-2 C1-2 C21-2 C19-2 U9-11 U9-15
+        C22-2 D1-1 U5-4 U5-5 U5-8 J4-10 U13-7 U10-3 C9-2 C11-2 U3-1 U3-10 C23-2 U8-14
+        U8-22 C3-2 JP4-1 U1-1 C17-2 U11-8 C8-2 J2-0 J2-0@1 J2-5 J11-20)
     )
     (net "unconnected-(RN1-Pad5)"
       (pins RN1-5)
@@ -3331,7 +3279,7 @@
     (net /*PIA2
       (pins U17-23 U11-14)
     )
-    (net "Net-(U13-Pad1)"
+    (net "/*R{slash}W"
       (pins U15-2 U13-1 U13-4 U13-9 U13-12)
     )
     (net /*EXTRA
@@ -3420,7 +3368,7 @@
     )
     (class kicad_default
       (circuit
-        (use_via Via[0-3]_800:400_um)
+        (use_via Via[0-1]_800:400_um)
       )
       (rule
         (width 250)
