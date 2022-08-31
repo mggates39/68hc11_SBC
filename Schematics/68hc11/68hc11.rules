@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 14)
+    (start_pass_no 16)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,7 +29,6 @@
     (width 250.0)
     (clear 200.0)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd-smd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -53,7 +52,7 @@
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (class default
-    VCC GND "unconnected-(RN1-Pad5)" "unconnected-(RN1-Pad6)" /T2OUT /AD0 /AD1 /AD2
+    GND VCC "unconnected-(RN1-Pad5)" "unconnected-(RN1-Pad6)" /T2OUT /AD0 /AD1 /AD2
     /AD3 /AD4 /AD5 /AD6 /AD7 /XTAL /VS+ /C1+
     "/C1-" /C2+ "/C2-" /PA7 /PA6 /PA5 /PA4 /PA3
     /PA2 /PA1 /PA0 /A15 /A14 /A13 /A12 /A11
@@ -72,7 +71,7 @@
     /*RDIO /*WRIO "unconnected-(J1-Pad3)" "unconnected-(J1-Pad4)" "unconnected-(J1-Pad2)" "unconnected-(U16-Pad26)" /P2PA0 /P2PA1
     /P2PA2 /P2PA3 /P2PA4 /P2PA5 /P2PA6 /P2PA7 /P2CA1 /P2CA2
     /P2PB0 /P2PB1 /P2PB2 /P2PB3 /P2PB4 /P2PB5 /P2PB6 /P2PB7
-    /P2CB1 /P2CB2 "unconnected-(J4-Pad12)"
+    /P2CB1 /P2CB2 "unconnected-(J4-Pad12)" "unconnected-(J7-Pad9)" "unconnected-(J7-Pad10)"
     (clearance_class default)
     (via_rule default)
     (rule
