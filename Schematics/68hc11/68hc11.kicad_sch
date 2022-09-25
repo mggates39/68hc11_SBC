@@ -6807,7 +6807,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a1cf6fec-9026-4137-b033-92071fdb377f)
   )
-  (label "*RAM" (at 322.58 34.925 0)
+  (label "*RAM" (at 353.06 34.925 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a2641562-6a3f-4cd4-8d24-19c0fee211d2)
   )
