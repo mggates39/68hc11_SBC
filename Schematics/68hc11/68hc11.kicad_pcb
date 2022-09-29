@@ -1652,6 +1652,11 @@
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp dc5495b1-d885-4417-a412-95821ef8ea40))
     (pad "SH" smd rect locked (at 1.2 0) (size 1.9 1.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp f941367b-696b-48ac-9343-c7faf8a0c86a))
+    (model "${KICAD6_3DMODEL_DIR}/Outside.3dshapes/10118193-0001lfc.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (layer "F.Cu")
@@ -1956,10 +1961,15 @@
       (net 44 "/VRL") (pinfunction "VRL") (pintype "input") (tstamp 65006fa9-3af2-446f-96d9-e38bbd6fd1fb))
     (pad "52" thru_hole circle (at 2.54 2.54) (size 1.4224 1.4224) (drill 0.8) (layers *.Cu *.Mask)
       (net 69 "/VRH") (pinfunction "VRH") (pintype "input") (tstamp bf6f185c-161f-4b94-8c90-879d83542ab8))
-    (model "${KICAD6_3DMODEL_DIR}/Package_LCC.3dshapes/PLCC-52_THT-Socket.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_LCC.3dshapes/PLCC-52_THT-Socket.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/Outside.3dshapes/8452-11b1-01.stp"
+      (offset (xyz 18 6 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
     )
   )
 
