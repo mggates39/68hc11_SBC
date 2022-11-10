@@ -1,5 +1,5 @@
 # 68hc11_SBC   [![Badge License]][License]
-Building a Single Board Computer around the MC58HC11.  Specifically the XC68HC11A1FN - A38P8642.  It will include my first attempt with [KiCad](https://www.kicad.org/) designing a PCB
+Building a Single Board Computer around the MC68HC11.  Specifically the XC68HC11A1FN - A38P8642.  It will include my first attempt with [KiCad](https://www.kicad.org/) designing a PCB
 
 [![Button Manual]][Manual]
 [![Button Memory]][Memory]
