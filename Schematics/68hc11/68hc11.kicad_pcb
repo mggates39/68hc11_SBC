@@ -1652,6 +1652,11 @@
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp dc5495b1-d885-4417-a412-95821ef8ea40))
     (pad "SH" smd rect locked (at 1.2 0) (size 1.9 1.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp f941367b-696b-48ac-9343-c7faf8a0c86a))
+    (model "${KICAD6_3DMODEL_DIR}/Outside.3dshapes/10118193-0001lfc.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (layer "F.Cu")
@@ -1956,10 +1961,15 @@
       (net 44 "/VRL") (pinfunction "VRL") (pintype "input") (tstamp 65006fa9-3af2-446f-96d9-e38bbd6fd1fb))
     (pad "52" thru_hole circle (at 2.54 2.54) (size 1.4224 1.4224) (drill 0.8) (layers *.Cu *.Mask)
       (net 69 "/VRH") (pinfunction "VRH") (pintype "input") (tstamp bf6f185c-161f-4b94-8c90-879d83542ab8))
-    (model "${KICAD6_3DMODEL_DIR}/Package_LCC.3dshapes/PLCC-52_THT-Socket.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_LCC.3dshapes/PLCC-52_THT-Socket.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/Outside.3dshapes/8452-11b1-01.stp"
+      (offset (xyz 18 6 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -2161,7 +2171,7 @@
     )
     (fp_circle (center 0 0) (end 2.5 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp ae714cbb-f2d9-4a42-bd80-b9be40f0d7b2))
     (fp_circle (center 0 0) (end 2.75 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 74016409-cc9c-4f6f-b06a-2f9fd13145ef))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask) (tstamp 9c36d5e4-598d-4887-bda7-404c96d67ebe))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Mask) (tstamp 9c36d5e4-598d-4887-bda7-404c96d67ebe))
   )
 
   (footprint "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" (layer "F.Cu")
@@ -2389,7 +2399,7 @@
     )
     (fp_circle (center 0 0) (end 2.5 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 75bc3386-87ca-481c-b59e-63b2a60cfef3))
     (fp_circle (center 0 0) (end 2.75 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp f094d92e-959e-4545-80a8-0f2601b25029))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask) (tstamp fa092757-d02c-4d9e-8e32-e98fa7fcfddd))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Mask) (tstamp fa092757-d02c-4d9e-8e32-e98fa7fcfddd))
   )
 
   (footprint "Button_Switch_THT:SW_PUSH_6mm" (layer "F.Cu")
@@ -3719,7 +3729,7 @@
     )
     (fp_circle (center 0 0) (end 2.5 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 3a77d73c-9add-4213-9a0b-76d71d494c8f))
     (fp_circle (center 0 0) (end 2.75 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp cfc8c9bc-5b83-4f47-8c6a-0bfd735b60e6))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask) (tstamp 23daa4da-8a9b-4322-8490-40d7db781117))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Mask) (tstamp 23daa4da-8a9b-4322-8490-40d7db781117))
   )
 
   (footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" (layer "F.Cu")
@@ -3787,7 +3797,7 @@
     )
     (fp_circle (center 0 0) (end 2.5 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 868ecad4-ba7f-4a94-9027-fd4b01677e12))
     (fp_circle (center 0 0) (end 2.75 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 09d877ca-482e-4d5b-a58c-100fa468dced))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask) (tstamp 16b351c2-7878-4424-9b7b-038450f6f06d))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Mask) (tstamp 16b351c2-7878-4424-9b7b-038450f6f06d))
   )
 
   (footprint "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" (layer "F.Cu")
